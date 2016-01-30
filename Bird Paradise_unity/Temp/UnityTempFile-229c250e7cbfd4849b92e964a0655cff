@@ -76,7 +76,9 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
+'Assets/Scripts/GameManager.cs'
 'Assets/Scripts/GetInputFromUser.cs'
 'Assets/Scripts/ProgressBar.cs'
+'Assets/Scripts/SequenceGenerator.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
