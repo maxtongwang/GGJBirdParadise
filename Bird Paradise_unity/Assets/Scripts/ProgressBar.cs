@@ -8,8 +8,8 @@ public class ProgressBar : MonoBehaviour {
 	public Scrollbar progressBar1;
 	public Scrollbar progressBar2;
 
-	public float progress1 = .0f;
-	public float progress2 = .0f;
+	public float progress1;
+	public float progress2;
 
 	void Start()
 	{
@@ -18,25 +18,29 @@ public class ProgressBar : MonoBehaviour {
 	}
 
 	// call this function every time a button press happens
-	void makingProgressP1(float score)
+	public void makingProgressP1(float score)
 	{
-		progress1 += score / 40f;
+		progress1 += score;
+		progressBar1.size = progress1 / 40;
 	}
 
-	void makingProgressP2(float score)
+	public void makingProgressP2(float score)
 	{
-		progress2 += score / 40f;
+		progress2 += score;
+		progressBar2.size = progress2 / 40;
 	}
 
 	// call this function at the end of a sequence
-	void timeBonus(bool p1bonus, bool p2bonus)
+	public void timeBonus(bool p1bonus, bool p2bonus)
 	{
 		if (p1bonus) {
-			progress1 *= 1.5f / 40f;
+			progress1 *= 1.5f;
+			progressBar1.size = progress1 / 40;
 		}
 
 		if (p2bonus) {
-			progress2 *= 1.5f / 40f;
+			progress2 *= 1.5f;
+			progressBar2.size = progress2 / 40;
 		}
 	}
 }
