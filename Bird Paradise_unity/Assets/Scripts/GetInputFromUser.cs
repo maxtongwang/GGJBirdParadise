@@ -16,7 +16,7 @@ public class GetInputFromUser : MonoBehaviour {
 //	public string[] RandomArray2 = new String[3] { "K", "N", "U" };
 	public char[] RandomArray1;
 	public char[] RandomArray2;
-    public String temp;
+	public char temp;
     int inputArrayIndex1 = 0;
     int inputArrayIndex2 = 0;
     float p1Score;
@@ -78,7 +78,7 @@ public class GetInputFromUser : MonoBehaviour {
         }
     }
 
-    void compareKeysWithDisplayedKeys(String[] playerName, String tempString, String[] incomingArray, int index)
+	void compareKeysWithDisplayedKeys(string[] playerName, char tempString, char[] incomingArray, int index)
     {
         if(playerName[0] == "One")
         {
@@ -169,7 +169,7 @@ public class GetInputFromUser : MonoBehaviour {
 
     void convertKeysToString(KeyCode keyCode)
     {
-        temp = keyCode.ToString();
+		temp = keyCode.ToString().ToCharArray()[0];
     }
 
 	// Use this for initialization
