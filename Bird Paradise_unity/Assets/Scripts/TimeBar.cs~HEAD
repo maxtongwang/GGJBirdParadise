@@ -1,23 +1,31 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEditor;
 
-public class PressKey : MonoBehaviour {
+public class TimeBar : MonoBehaviour {
 
 	public Slider healthBarSlider;  //reference for slider
 	float timer;
 	float healthbar_rate=0.1f;
 	public GameObject player1_marker;//time bar wining marker for player 1
 	public GameObject player2_marker;//time bar wining marker for player 2
+	GetInputFromUser getInputFromUser;
 
 
 	// Use this for initialization
 	void Start () {
+
+		GameObject MainCamera = GameObject.Find("Main Camera");
+		getInputFromUser = MainCamera.GetComponent<GetInputFromUser>();
+
 		 timer = Time.deltaTime;
 		healthBarSlider.value = 1;//set current time bar in full length 
-		//transform.localPosition = new Vector3 (-461, 170f);//set in a invisible place outside of screen
 
+
+		healthbar_rate = 1 / getInputFromUser.calculateTotalTime(); 
+		// healthbar_rate=1/caculatetotoaltime.totoaltime 
+		// from getinutFromUser.cs 
 	}
 	
 	// Update is called once per frame
@@ -25,15 +33,17 @@ public class PressKey : MonoBehaviour {
 		 timer += Time.deltaTime;//start caculate time
 
 		if(healthBarSlider.value>0)
-			healthBarSlider.value= 1- timer*healthbar_rate;
+			healthBarSlider.value= 1f- timer*healthbar_rate;
+
+
 	    else
 			Debug.Log("you lose");
 		
-		finish_game ();//call finish game function decide if the player wins 
+		finish_game ();//call finish_game function decide if the player wins 
 
+		//victory marker
 		if (finish_game ()==1)
 			player1_marker.transform.position = new Vector3 (healthBarSlider.transform.position.x-83.5f+ 167f * healthBarSlider.value,  healthBarSlider.transform.position.y);
-		//the coords of 344, 160, 170 depends on canvas size. ask Xi for detail 
 		if (finish_game ()==2)
 			player2_marker.transform.position = new Vector3 (healthBarSlider.transform.position.x-83.5f+ 167f * healthBarSlider.value,  healthBarSlider.transform.position.y);
 		
@@ -42,9 +52,9 @@ public class PressKey : MonoBehaviour {
 
 
 	public int finish_game(){
-		if (Input.GetKeyDown (KeyCode.A))
+		if (getInputFromUser.p1End==true)   // if p1End==true. from getinutFromUser.cs 
 			return 1;
-		else if (Input.GetKeyDown (KeyCode.B))
+		else if (getInputFromUser.p2End==true) // if p2End==true.  from getinutFromUser.cs
 			return 2;
 		else
 			return 3;
