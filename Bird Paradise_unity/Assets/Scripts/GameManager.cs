@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,11 +6,14 @@ public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance;
 
+	public GameObject letterObject;
 	GetInputFromUser input;
+	DisplayLetters letters;
 
 	void Awake()
 	{
 		input = GetComponent<GetInputFromUser> ();
+		letters = letterObject.GetComponent<DisplayLetters> ();
 
 		if (Instance == null)
 		{
@@ -48,7 +51,7 @@ public class GameManager : MonoBehaviour
 		SequenceGenerator.NewRound(ref p1Sequence, ref p2Sequence);
 
 		input.RecieveArrays (p1Sequence, p2Sequence);
-
+		letters.findLetterImage(p1Sequence, p2Sequence);
 		string p1Test = "";
 		string p2Test = "";
 
