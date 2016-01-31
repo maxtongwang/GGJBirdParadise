@@ -32,12 +32,11 @@ public class PressKey : MonoBehaviour {
 		finish_game ();//call finish game function decide if the player wins 
 
 		if (finish_game ()==1)
-			player1_marker.transform.localPosition = new Vector3 (-302.5f + 160 * healthBarSlider.value, 149f);
+			player1_marker.transform.position = new Vector3 (healthBarSlider.transform.position.x-83.5f+ 167f * healthBarSlider.value,  healthBarSlider.transform.position.y);
 		//the coords of 344, 160, 170 depends on canvas size. ask Xi for detail 
 		if (finish_game ()==2)
-			player2_marker.transform.localPosition = new Vector3 (-302.5f + 160 * healthBarSlider.value,149f);
-
-
+			player2_marker.transform.position = new Vector3 (healthBarSlider.transform.position.x-83.5f+ 167f * healthBarSlider.value,  healthBarSlider.transform.position.y);
+		
 
          }
 
