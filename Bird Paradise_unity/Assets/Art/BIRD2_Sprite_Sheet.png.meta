@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b60c629ea965c4e459e49b6cc18205f0
-timeCreated: 1454263582
+guid: 92bdcc30b900645fbbb5eeb5f09ba610
+timeCreated: 1454266631
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -17,7 +17,7 @@ TextureImporter:
     21300020: BIRD2_Sprite_Sheet_12
     21300022: BIRD2_Sprite_Sheet_14
     21300024: BIRD2_Sprite_Sheet_15
-    21300026: BIRD2_Sprite_Sheet_16
+    21300026: BIRD2_Sprite_Sheet_17
     21300028: BIRD2_Sprite_Sheet_18
     21300030: BIRD2_Sprite_Sheet_20
     21300032: BIRD2_Sprite_Sheet_21
@@ -502,7 +502,7 @@ TextureImporter:
         - {x: 39, y: 90}
         - {x: 40, y: 96}
         - {x: 40, y: 108}
-    - name: BIRD2_Sprite_Sheet_16
+    - name: BIRD2_Sprite_Sheet_17
       rect:
         serializedVersion: 2
         x: 2048

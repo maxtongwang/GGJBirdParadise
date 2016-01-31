@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class SequenceGenerator : MonoBehaviour
@@ -8,7 +8,7 @@ public class SequenceGenerator : MonoBehaviour
 													new char[] {'E','D','C'},
 													new char[] {'R','F','V'}};
 	
-	private static char[][] p2Keys = new char[][] { new char[] {'O','L','P'},
+	private static char[][] p2Keys = new char[][] { new char[] {'P','O','L'},
 													new char[] {'I','K','M'},
 													new char[] {'U','J','N'},
 													new char[] {'Y','H','B'}};
@@ -17,8 +17,8 @@ public class SequenceGenerator : MonoBehaviour
 	
 	public static void NewRound(ref char[] p1Letters, ref char[] p2Letters)
 	{
-		int difficulty = 9;
-		difficulty = ChooseDificulty();
+		int difficulty = 7;
+		//difficulty = ChooseDificulty();
 
 		int length = (difficulty / 3) + 3;
 		p1Letters = new char[length];
@@ -159,10 +159,11 @@ public class SequenceGenerator : MonoBehaviour
 						{
 							if(sequence[0][i] == max)
 							{	clear = false;	}
-							else
+							else if(sequence[0][i] == sequence[0][i-1])
 							{
 								sequence[0][i] += 1;
-								sequence [0] [i + length] += 1;
+								sequence[0][i + length] += 1;
+								same -= 1;
 							}
 						}
 
@@ -177,10 +178,32 @@ public class SequenceGenerator : MonoBehaviour
 		}
 		while(!clear);
 
+		current = 0;
+		max = 2;
+
 		for(int i = 0; i < length; i += 1)
 		{
-			sequence[1][i] = 0;
-			sequence[1][i + length] = 0;
+			if(i == 0)
+			{
+				//skip
+			}
+			else if(sequence[0][i] == sequence[0][i-1])
+			{
+				current += 1;
+				same -= 1;
+				max -= 1;
+			}
+			else if(same != max)
+			{
+				if(Random.Range(0, max-same+1) == 0)
+				{
+					current += 1;
+					max -= 1;
+				}
+			}
+
+			sequence[1][i] = current;
+			sequence[1][i + length] = current;
 		}
 
 		return sequence;
@@ -190,10 +213,75 @@ public class SequenceGenerator : MonoBehaviour
 	{
 		int[][] sequence = new int[][] {new int[length*2],
 										new int[length*2]};
+		int max = (int)Mathf.Min(3, length-1);
+		int same = 0;
 		bool cleared;
 
+		for (int i = 0; i < length; i += 1)
+		{
+			do
+			{
+				cleared = true;
 
+				sequence[0][i] = Random.Range(0,max+1);
+				sequence[0][i+length] = sequence[0][i];
 
+				for(int j = 0; j < i; j += 1)
+				{
+					if(sequence[0][i] == sequence[0][j])
+					{
+						if(same == 2)
+						{	cleared = false;	}
+						else if(Random.Range(0, 2-same+1) == 0)
+						{	same += 1;	}
+						else
+						{	cleared = false;	}
+					}
+				}
+			}
+			while(!cleared);
+		}
+
+		int current = 0;
+		max = 2;
+
+		for(int i = 0; i < length; i += 1)
+		{
+			if(i == 0)
+			{
+				if(same != max)
+				{
+					if(Random.Range(0, max-same+1) == 0)
+					{
+						current += 1;
+						max -= 1;
+					}
+				}
+
+			}
+			for(int j = 0; j < i; j += 1)
+			{
+				if(sequence[0][i] == sequence[0][j])
+				{
+					current += 1;
+					same -= 1;
+					max -= 1;
+					break;
+				}
+				else if(same != max)
+				{
+					if(Random.Range(0, max-same+1) == 0)
+					{
+						current += 1;
+						max -= 1;
+					}
+				}
+			}
+
+			sequence[1][i] = current;
+			sequence[1][i + length] = current;
+		}
+			
 		return sequence;
 	}
 
