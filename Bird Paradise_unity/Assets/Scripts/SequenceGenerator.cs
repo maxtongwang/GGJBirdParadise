@@ -17,8 +17,8 @@ public class SequenceGenerator : MonoBehaviour
 	
 	public static void NewRound(ref char[] p1Letters, ref char[] p2Letters)
 	{
-		int difficulty = 0;
-		//difficulty = ChooseDificulty();
+		int difficulty = 9;
+		difficulty = ChooseDificulty();
 
 		int length = (difficulty / 3) + 3;
 		p1Letters = new char[length];
@@ -26,7 +26,19 @@ public class SequenceGenerator : MonoBehaviour
 
 		int[][] sequence = new int[][] {new int[] {0, 1, 2, 0, 1, 2},
 										new int[] {1, 1, 1, 1, 1, 1}};
-		//sequence = GenerateTheSequence(length, difficulty);
+		sequence = GenerateTheSequence(length, difficulty);
+
+		Debug.Log(length + " " + difficulty);
+
+		string check1 = "";
+		string check2 = "";
+		for(int i = 0; i < sequence[0].Length; i += 1)
+		{
+			check1 = check1 + sequence[0][i] + ", ";
+			check2 = check2 + sequence [1] [i] + ", ";
+		}
+		Debug.Log(check1);
+		Debug.Log (check2);
 
 		p1Letters = InterpretSequence(sequence, 0, length, true);
 		p2Letters = InterpretSequence(sequence, length, length, false);
@@ -36,9 +48,7 @@ public class SequenceGenerator : MonoBehaviour
 
 	static int ChooseDificulty()
 	{
-		int difficulty = 0;
-
-
+		int difficulty = Random.Range(0,4) * 3 + 2;
 
 		return difficulty;
 	}
@@ -53,10 +63,10 @@ public class SequenceGenerator : MonoBehaviour
 			sequence = TotalControl (length);
 			break;
 		case 1:
-			sequence = TotalControl (length);
+			sequence = StructuredRandom (length);
 			break;
 		case 2:
-			sequence = TotalControl (length);
+			sequence = WildAndRandom (length);
 			break;
 		}
 
@@ -67,17 +77,111 @@ public class SequenceGenerator : MonoBehaviour
 	{
 		int[][] sequence = new int[][] {new int[length*2],
 										new int[length*2]};
-		int current = 0;
-		int possible = 2;
-		int same = 0;
+		int current, max, possible, same;
+		bool clear;
 
-		for (int i = 0; i < length; i += 1)
+		do
 		{
-			int sum = possible * (1 + possible) / 2;
+			current = 0;
+			max = (int)Mathf.Min(3, length-1);
+			possible = 2;
+			same = 0;
+			clear = true;
 
-			int r = Random.Range (0, possible - 1);
+			for (int i = 0; i < length; i += 1)
+			{
+				int sum = possible * (1 + possible) / 2;
+				int r = Random.Range (0, sum);
+
+//				Debug.Log (r);
+
+				for (int j = possible; j >= 0; j -= 1)
+				{
+					r -= j;
+					if (r < 0 || possible == 0)
+					{
+						int check = possible - j;
+
+						if(i >= max)
+						{
+							sequence[0][i] = current + check;
+							sequence[0][i+length] = current + check;
+
+							if(sequence[0][i] == sequence[0][i-1])
+							{	same += 1;	}
+						}
+						else if(possible == 2)
+						{
+							if(check == 0)
+							{
+								sequence[0][i] = i;
+								sequence[0][i+length] = i;
+							}
+							else if(check == 1)
+							{
+								sequence[0][i] = i + 1;
+								sequence[0][i+length] = i + 1;
+							}
+							if(i > 0)
+							{
+								if(sequence[0][i] == sequence[0][i-1])
+								{	same += 1;	}
+							}
+						}
+						else if(i > 0)
+						{
+							if(check == 0)
+							{
+								sequence[0][i] = i;
+								sequence[0][i+length] = i;
+							}
+							else if(check == 1)
+							{
+								sequence[0][i] = i - 1;
+								sequence[0][i+length] = i - 1;
+							}
+							else if(check == 2)
+							{
+								sequence[0][i] = i + 1;
+								sequence[0][i+length] = i + 1;
+							}
+							else
+							{
+								sequence[0][i] = i - (check - 1);
+								sequence[0][i+length] = i - (check - 1);
+							}
+								
+							if(sequence[0][i] == sequence[0][i-1])
+							{	same += 1;	}
+						}
+
+						if(same >= 3)
+						{
+							if(sequence[0][i] == max)
+							{	clear = false;	}
+							else
+							{
+								sequence[0][i] += 1;
+								sequence [0] [i + length] += 1;
+							}
+						}
+
+//						Debug.Log(i + " " + j + " " + current + " " + sequence[0][i] + " " + max + " " + possible + " " + sum + " " + r + " " + check);
+
+						possible = (int)Mathf.Min(max, i + 2) - sequence[0][i] + 1;
+						current = sequence[0][i];
+						break;
+					}
+				}
+			}
 		}
+		while(!clear);
 
+		for(int i = 0; i < length; i += 1)
+		{
+			sequence[1][i] = 0;
+			sequence[1][i + length] = 0;
+		}
 
 		return sequence;
 	}
@@ -97,24 +201,39 @@ public class SequenceGenerator : MonoBehaviour
 	{
 		int[][] sequence = new int[][] {new int[length*2],
 										new int[length*2]};
+		int tries;
+		int max = (int)Mathf.Min(3, length-1);
 		bool cleared;
 
 		for(int i = 0; i < length; i += 1)
 		{
-			cleared = true;
+//			cleared = true;
+			tries = 0;
 
 			do
 			{
-				sequence[0][i] = Random.Range(0,length-1);
-				sequence[1][i] = Random.Range(0,2);
+				cleared = true;
 
-				for(int j = 0; j < i; i += 1)
+				sequence[0][i] = Random.Range(0,max+1);
+				sequence[1][i] = Random.Range(0,3);
+
+				for(int j = 0; j < i; j += 1)
 				{
-					if(sequence[0][i] == sequence[0][j] && sequence[0][i] == sequence[0][j])
-					{	cleared = false;	}
+					if(sequence[0][i] == sequence[0][j] && sequence[1][i] == sequence[1][j])
+					{
+						cleared = false;
+						tries += 1;
+						Debug.Log(sequence[0][i] + " " + sequence[1][i] + " " + sequence[0][j] + " " + sequence[1][j]);
+					}
 				}
 			}
-			while(cleared);
+			while(!cleared && tries < 10);
+
+			sequence[0][i+length] = sequence[0][i];
+			sequence[1][i+length] = sequence[1][i];
+
+			if(tries >= 10)
+			{	Debug.Log ("10 tries at space " + i);	}
 		}
 			
 		return sequence;

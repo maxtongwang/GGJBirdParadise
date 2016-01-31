@@ -41,6 +41,7 @@ public class GetInputFromUser : MonoBehaviour {
 		roundStarted = true;
 		p1Playing = true;
 		p2Playing = true;
+		calculateTotalTime();
 	}
 
     //Fuction to detect the key pressed by player
@@ -128,7 +129,7 @@ public class GetInputFromUser : MonoBehaviour {
                 {
                     Debug.Log("The condition is satisfied " + playerName[0]);
                     getTimeUsedByPlayer(playerName);
-                    p1Playing = false;
+                    p2Playing = false;
 
                     if (!p2Playing)
 					{
@@ -246,7 +247,7 @@ public class GetInputFromUser : MonoBehaviour {
         {
             totalTime += Mathf.Pow(0.8f, i);
         }
-        Debug.Log("Time allowed to complete the task is " + totalTime);
+		Debug.Log("Time allowed to complete the task is " + totalTime + " for " + RandomArray1.Length + " letters");
     }
 
     void bonusEligibility()
@@ -254,12 +255,12 @@ public class GetInputFromUser : MonoBehaviour {
         if ((timeTaken[0] < timeTaken[1]) && (p1ClickScore >= p2ClickScore))
         {
             scoreTimeBonusP1(p1Score);
-            Debug.Log("P1 won");
+			Debug.Log("P1 won - " + timeTaken[0] + " vs " + timeTaken[1] + " - " + p1ClickScore + " vs " + p2ClickScore);
         }
         else if ((timeTaken[1] < timeTaken[0]) && (p2ClickScore >= p1ClickScore))
         {
             scoreTimeBonusP2(p2Score);
-            Debug.Log("P2 won");
+			Debug.Log("P2 won - " + timeTaken[1] + " vs " + timeTaken[0] + " - " + p2ClickScore + " vs " + p1ClickScore);
         }
     }
 	
@@ -278,6 +279,6 @@ public class GetInputFromUser : MonoBehaviour {
 
     void Awake()
     {
-        calculateTotalTime();
+//        calculateTotalTime();
     }
 }
