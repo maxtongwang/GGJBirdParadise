@@ -21,13 +21,13 @@ public class ProgressBar : MonoBehaviour {
 	public void makingProgressP1(float score)
 	{
 		progress1 += score;
-		progressBar1.size = progress1 / 40;
+		progressBar1.size = progress1 / 20;
 	}
 
 	public void makingProgressP2(float score)
 	{
 		progress2 += score;
-		progressBar2.size = progress2 / 40;
+		progressBar2.size = progress2 / 20;
 	}
 
 	// call this function at the end of a sequence
@@ -35,12 +35,12 @@ public class ProgressBar : MonoBehaviour {
 	{
 		if (p1bonus) {
 			progress1 *= 1.5f;
-			progressBar1.size = progress1 / 40;
+			progressBar1.size = progress1 / 20;
 		}
 
 		if (p2bonus) {
 			progress2 *= 1.5f;
-			progressBar2.size = progress2 / 40;
+			progressBar2.size = progress2 / 20;
 		}
 	}
 }
