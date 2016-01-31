@@ -31,7 +31,12 @@ public class GetInputFromUser : MonoBehaviour {
 	bool p1LastHit;
 	bool p2LastHit;
     float timer;
-    float totalTime = 1;
+    float totalTime = 5;
+    bool newSequence = false;
+    bool p1End = false;
+    bool p2End = false;
+    float p1TotalClicks = 0;
+    float p2TotalClicks = 0;
     //float finalScore;
 
 	public void RecieveArrays(char[] p1Array, char[] p2Array)
@@ -96,10 +101,11 @@ public class GetInputFromUser : MonoBehaviour {
                 Debug.Log("P1 got the key right at the time " + timer);
                 p1Score += 1f;
                 p1ClickScore++;
+                p1TotalClicks++;
 				progressBar.makingProgressP1(p1Score);
 
 				// at the end of sequence
-                if (inputArrayIndex1 == incomingArray.Length - 1)
+                if ((inputArrayIndex1 == incomingArray.Length - 1))
                 {
                     // check for bonus eligiblity here
                     
@@ -108,7 +114,7 @@ public class GetInputFromUser : MonoBehaviour {
                     getTimeUsedByPlayer(playerName);
                     p1Playing = false;
 
-                    p1ClickScore = 0;
+                        //p1ClickScore = 0;
 
                     if (!p2Playing)
 					{
@@ -119,13 +125,14 @@ public class GetInputFromUser : MonoBehaviour {
 
             else
             {
-				Debug.Log("P1 sucks, the correct key was " + temp);
+				Debug.Log("P1 sucks, the correct key was " + incomingArray[index]);
 				p1Score += -1f;
+                p1TotalClicks++;
                 //p1ClickScore -=1/2;
                 progressBar.makingProgressP1(p1Score);
 
 				// at the end of sequence
-                if (inputArrayIndex1 == incomingArray.Length - 1)
+                if ((inputArrayIndex1 == incomingArray.Length - 1))
                 {
                     Debug.Log("The condition is satisfied " + playerName[0]);
                     getTimeUsedByPlayer(playerName);
@@ -150,9 +157,10 @@ public class GetInputFromUser : MonoBehaviour {
                 Debug.Log("P2 got the key right at the time " + timer);
 				p2Score += 1f;
                 p2ClickScore++;
+                p2TotalClicks++;
                 progressBar.makingProgressP2(p2Score);
 
-                if(inputArrayIndex2 == incomingArray.Length - 1)
+                if((inputArrayIndex2 == incomingArray.Length - 1))
                 {
                     // check for bonus eligiblity here
 
@@ -160,7 +168,7 @@ public class GetInputFromUser : MonoBehaviour {
                     getTimeUsedByPlayer(playerName);
                     p2Playing = false;
 
-                    p2ClickScore = 0;
+                    //p2ClickScore = 0;
 
 					if (!p1Playing)
 					{
@@ -172,12 +180,13 @@ public class GetInputFromUser : MonoBehaviour {
 
             else
             {
-                Debug.Log("P2 sucks");
+                Debug.Log("P2 sucks, the correct key was " + incomingArray[index]);
 				p2Score += -1f;
+                p2TotalClicks++;
                 //p2ClickScore -=1/2;
                 progressBar.makingProgressP2(p2Score);
 
-				if (inputArrayIndex2 == incomingArray.Length - 1)
+				if ((inputArrayIndex2 == incomingArray.Length - 1))
                 {
                     Debug.Log("The condition is satisfied " + playerName[0]);
                     getTimeUsedByPlayer(playerName);
@@ -209,11 +218,13 @@ public class GetInputFromUser : MonoBehaviour {
         {
             timeTaken[0] = timer;
             Debug.Log("The total time taken by the Player 1 is " + timeTaken[0]);
+            p1End = true;
         }
         else if (player[0] == "Two")
         {
             timeTaken[1] = timer;
             Debug.Log("The total time taken by the Player 2 is " + timeTaken[1]);
+            p2End = true;
         }
     }
 
@@ -264,6 +275,25 @@ public class GetInputFromUser : MonoBehaviour {
         }
     }
 	
+    void winningCondition()
+    {
+
+    }
+    void stabilizeTime()
+    {
+        if(p1TotalClicks < RandomArray1.Length)
+        {
+            timeTaken[0] = totalTime;
+            Debug.Log("The total time taken by the Player 1 is " + timeTaken[0]);
+            p1End = true;
+        }
+        if(p2TotalClicks < RandomArray1.Length)
+        {
+            timeTaken[1] = totalTime;
+            Debug.Log("The total time taken by the Player 2 is " + timeTaken[1]);
+            p2End = true;
+        }
+    }
 	// Update is called once per frame
 	void Update () {
 
@@ -271,7 +301,11 @@ public class GetInputFromUser : MonoBehaviour {
         timer += Time.deltaTime;
         if(timer > totalTime)
         {
+            newSequence = true;
+            stabilizeTime();
             bonusEligibility();
+            p1ClickScore = 0;
+            p2ClickScore = 0;
             Debug.Break();
             SceneManager.LoadScene("Score");
         }
