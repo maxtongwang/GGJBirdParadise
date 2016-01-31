@@ -45,7 +45,7 @@ public class SequenceGenerator : MonoBehaviour
 
 	static int[][] GenerateTheSequence(int length, int difficulty)
 	{
-		int[][] sequence;
+		int[][] sequence = new int[1][];
 
 		switch(difficulty % 3)
 		{
