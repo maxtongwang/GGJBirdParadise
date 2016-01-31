@@ -65,7 +65,8 @@ public class SequenceGenerator : MonoBehaviour
 
 	static int[][] TotalControl(int length)
 	{
-		int[][] sequence = new int[2][length*2];
+		int[][] sequence = new int[][] {new int[length*2],
+										new int[length*2]};
 		int current = 0;
 		int possible = 2;
 		int same = 0;
@@ -83,7 +84,8 @@ public class SequenceGenerator : MonoBehaviour
 
 	static int[][] StructuredRandom(int length)
 	{
-		int[][] sequence = new int[2][length*2];
+		int[][] sequence = new int[][] {new int[length*2],
+										new int[length*2]};
 		bool cleared;
 
 
@@ -93,7 +95,8 @@ public class SequenceGenerator : MonoBehaviour
 
 	static int[][] WildAndRandom(int length)
 	{
-		int[][] sequence = new int[2][length*2];
+		int[][] sequence = new int[][] {new int[length*2],
+										new int[length*2]};
 		bool cleared;
 
 		for(int i = 0; i < length; i += 1)
