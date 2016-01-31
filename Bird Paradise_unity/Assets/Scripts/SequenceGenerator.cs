@@ -65,25 +65,55 @@ public class SequenceGenerator : MonoBehaviour
 
 	static int[][] TotalControl(int length)
 	{
-		int[][] sequence = new int[2][length];
+		int[][] sequence = new int[2][length*2];
+		int current = 0;
+		int possible = 2;
+		int same = 0;
+
+		for (int i = 0; i < length; i += 1)
+		{
+			int sum = possible * (1 + possible) / 2;
+
+			int r = Random.Range (0, possible - 1);
+		}
 
 
+		return sequence;
 	}
 
 	static int[][] StructuredRandom(int length)
 	{
-		int[][] sequence = new int[2][length];
+		int[][] sequence = new int[2][length*2];
+		bool cleared;
 
 
+
+		return sequence;
 	}
 
 	static int[][] WildAndRandom(int length)
 	{
-		int[][] sequence = new int[2][length];
+		int[][] sequence = new int[2][length*2];
+		bool cleared;
 
-//		for(int i = 0; i < length; i += 1)
-//		{	sequence[i] = Random.Range(0, size-1);	}
+		for(int i = 0; i < length; i += 1)
+		{
+			cleared = true;
 
+			do
+			{
+				sequence[0][i] = Random.Range(0,length-1);
+				sequence[1][i] = Random.Range(0,2);
+
+				for(int j = 0; j < i; i += 1)
+				{
+					if(sequence[0][i] == sequence[0][j] && sequence[0][i] == sequence[0][j])
+					{	cleared = false;	}
+				}
+			}
+			while(cleared);
+		}
+			
 		return sequence;
 	}
 
