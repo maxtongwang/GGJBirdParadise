@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -20,27 +20,27 @@ public class ProgressBar : MonoBehaviour {
 	// call this function every time a button press happens
 	public void makingProgressP1(float score)
 	{
-		progress1 += score;
-		progressBar1.size = progress1 / 20;
+		//progress1 += score;
+		progressBar1.size = score / 10;
 	}
 
 	public void makingProgressP2(float score)
 	{
-		progress2 += score;
-		progressBar2.size = progress2 / 20;
+		//progress2 += score;
+		progressBar2.size = score / 10;
 	}
 
 	// call this function at the end of a sequence
-	public void timeBonus(bool p1bonus, bool p2bonus)
-	{
-		if (p1bonus) {
-			progress1 *= 1.5f;
-			progressBar1.size = progress1 / 20;
-		}
+	//public void timeBonus(bool p1bonus, bool p2bonus)
+	//{
+	//	if (p1bonus) {
+	//		progress1 *= 1.5f;
+	//		progressBar1.size = progress1 / 20;
+	//	}
 
-		if (p2bonus) {
-			progress2 *= 1.5f;
-			progressBar2.size = progress2 / 20;
-		}
-	}
+	//	if (p2bonus) {
+	//		progress2 *= 1.5f;
+	//		progressBar2.size = progress2 / 20;
+	//	}
+	//}
 }
