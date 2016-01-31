@@ -1,0 +1,1143 @@
+fileFormatVersion: 2
+guid: e9b250155bc2d4336b4c655a3e650e0c
+timeCreated: 1454263365
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BIRD1_Sprite_Sheet_0
+    21300002: BIRD1_Sprite_Sheet_1
+    21300004: BIRD1_Sprite_Sheet_6
+    21300006: BIRD1_Sprite_Sheet_7
+    21300008: BIRD1_Sprite_Sheet_8
+    21300010: BIRD1_Sprite_Sheet_10
+    21300012: BIRD1_Sprite_Sheet_13
+    21300014: BIRD1_Sprite_Sheet_17
+    21300016: BIRD1_Sprite_Sheet_18
+    21300018: BIRD1_Sprite_Sheet_19
+    21300020: BIRD1_Sprite_Sheet_20
+    21300022: BIRD1_Sprite_Sheet_21
+    21300024: BIRD1_Sprite_Sheet_22
+    21300026: BIRD1_Sprite_Sheet_25
+    21300028: BIRD1_Sprite_Sheet_26
+    21300030: BIRD1_Sprite_Sheet_29
+    21300032: BIRD1_Sprite_Sheet_30
+    21300034: BIRD1_Sprite_Sheet_31
+    21300036: BIRD1_Sprite_Sheet_32
+    21300038: BIRD1_Sprite_Sheet_33
+    21300040: BIRD1_Sprite_Sheet_34
+    21300042: BIRD1_Sprite_Sheet_35
+    21300044: BIRD1_Sprite_Sheet_36
+    21300046: BIRD1_Sprite_Sheet_37
+    21300048: BIRD1_Sprite_Sheet_38
+    21300050: BIRD1_Sprite_Sheet_39
+    21300052: BIRD1_Sprite_Sheet_40
+    21300054: BIRD1_Sprite_Sheet_42
+    21300056: BIRD1_Sprite_Sheet_46
+    21300058: BIRD1_Sprite_Sheet_47
+    21300060: BIRD1_Sprite_Sheet_48
+    21300062: BIRD1_Sprite_Sheet_49
+    21300064: BIRD1_Sprite_Sheet_50
+    21300066: BIRD1_Sprite_Sheet_51
+    21300068: BIRD1_Sprite_Sheet_53
+    21300070: BIRD1_Sprite_Sheet_54
+    21300072: BIRD1_Sprite_Sheet_55
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BIRD1_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -111}
+        - {x: 25, y: -124}
+        - {x: 72, y: -114}
+        - {x: 71, y: -106}
+        - {x: 111, y: -37}
+        - {x: 111, y: 16}
+        - {x: 50, y: 109}
+        - {x: -53, y: 109}
+        - {x: -115, y: -16}
+        - {x: -115, y: -90}
+        - {x: -84, y: -125}
+        - {x: -15, y: -125}
+        - {x: -5, y: -123}
+        - {x: -3, y: -121}
+        - {x: -2, y: -114}
+    - name: BIRD1_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: -123}
+        - {x: 48, y: -123}
+        - {x: 65, y: -121}
+        - {x: 71, y: -117}
+        - {x: 105, y: -99}
+        - {x: 105, y: 10}
+        - {x: 53, y: 80}
+        - {x: -34, y: 80}
+        - {x: -110, y: -53}
+        - {x: -110, y: -95}
+        - {x: -58, y: -123}
+        - {x: -4, y: -123}
+        - {x: -2, y: -120}
+        - {x: -2, y: -114}
+        - {x: -4, y: -112}
+    - name: BIRD1_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70, y: -105}
+        - {x: -61, y: -124}
+        - {x: -20, y: -124}
+        - {x: -7, y: -123}
+        - {x: -3, y: -119}
+        - {x: -5, y: -111}
+        - {x: 11, y: -124}
+        - {x: 78, y: -124}
+        - {x: 78, y: -54}
+        - {x: 67, y: 43}
+        - {x: 23, y: 111}
+        - {x: -38, y: 111}
+        - {x: -70, y: 96}
+      - - {x: -85, y: -83}
+        - {x: -96, y: -83}
+        - {x: -101, y: -89}
+        - {x: -101, y: -106}
+        - {x: -96, y: -109}
+        - {x: -87, y: -109}
+        - {x: -78, y: -97}
+        - {x: -78, y: -88}
+        - {x: -79, y: -84}
+      - - {x: 99, y: -77}
+        - {x: 97, y: -79}
+        - {x: 97, y: -97}
+        - {x: 104, y: -100}
+        - {x: 116, y: -100}
+        - {x: 116, y: -87}
+        - {x: 107, y: -77}
+    - name: BIRD1_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -127}
+        - {x: 71, y: -122}
+        - {x: 74, y: -107}
+        - {x: 111, y: -29}
+        - {x: 111, y: 16}
+        - {x: 12, y: 76}
+        - {x: -11, y: 89}
+        - {x: -111, y: 89}
+        - {x: -116, y: 79}
+        - {x: -116, y: -85}
+        - {x: -109, y: -93}
+        - {x: -52, y: -127}
+        - {x: -3, y: -127}
+        - {x: 4, y: -119}
+        - {x: -2, y: -108}
+        - {x: 9, y: -122}
+    - name: BIRD1_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 65, y: -123}
+        - {x: 106, y: -23}
+        - {x: 106, y: 62}
+        - {x: 43, y: 125}
+        - {x: -46, y: 125}
+        - {x: -81, y: 115}
+        - {x: -104, y: 25}
+        - {x: -104, y: -49}
+        - {x: -56, y: -123}
+        - {x: -41, y: -123}
+        - {x: -13, y: -120}
+        - {x: -11, y: -111}
+        - {x: 15, y: -122}
+        - {x: 34, y: -123}
+      - - {x: -127, y: -82}
+        - {x: -128, y: -85}
+        - {x: -128, y: -102}
+        - {x: -117, y: -102}
+        - {x: -113, y: -101}
+        - {x: -110, y: -93}
+        - {x: -110, y: -84}
+        - {x: -111, y: -82}
+      - - {x: 118, y: -77}
+        - {x: 118, y: -94}
+        - {x: 119, y: -95}
+        - {x: 128, y: -95}
+        - {x: 128, y: -79}
+        - {x: 127, y: -77}
+    - name: BIRD1_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -2}
+        - {x: -8, y: -3}
+        - {x: -9, y: -10}
+        - {x: -122, y: -106}
+        - {x: -122, y: -120}
+        - {x: -118, y: -127}
+        - {x: 118, y: -127}
+        - {x: 118, y: -93}
+        - {x: 16, y: -2}
+      - - {x: 113, y: -66}
+        - {x: 108, y: -71}
+        - {x: 108, y: -86}
+        - {x: 109, y: -89}
+        - {x: 121, y: -89}
+        - {x: 124, y: -88}
+        - {x: 127, y: -84}
+        - {x: 127, y: -71}
+        - {x: 125, y: -66}
+      - - {x: -104, y: -66}
+        - {x: -108, y: -65}
+        - {x: -121, y: -65}
+        - {x: -121, y: -81}
+        - {x: -119, y: -88}
+        - {x: -109, y: -88}
+        - {x: -105, y: -85}
+        - {x: -104, y: -82}
+      - - {x: -124, y: -32}
+        - {x: -127, y: -34}
+        - {x: -127, y: -52}
+        - {x: -123, y: -54}
+        - {x: -114, y: -54}
+        - {x: -113, y: -52}
+        - {x: -113, y: -37}
+        - {x: -116, y: -32}
+      - - {x: 119, y: -34}
+        - {x: 117, y: -41}
+        - {x: 117, y: -54}
+        - {x: 128, y: -54}
+        - {x: 128, y: -35}
+        - {x: 127, y: -34}
+    - name: BIRD1_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 41}
+        - {x: -52, y: -66}
+        - {x: -52, y: -119}
+        - {x: 67, y: -119}
+        - {x: 67, y: -87}
+        - {x: 49, y: 0}
+        - {x: 11, y: 41}
+      - - {x: -53, y: -87}
+        - {x: -58, y: -83}
+        - {x: -65, y: -83}
+        - {x: -71, y: -84}
+        - {x: -76, y: -90}
+        - {x: -76, y: -102}
+        - {x: -75, y: -106}
+        - {x: -65, y: -106}
+        - {x: -59, y: -100}
+        - {x: -55, y: -94}
+        - {x: -53, y: -90}
+      - - {x: 72, y: -82}
+        - {x: 67, y: -82}
+        - {x: 66, y: -84}
+        - {x: 66, y: -98}
+        - {x: 71, y: -103}
+        - {x: 80, y: -103}
+        - {x: 84, y: -102}
+        - {x: 84, y: -90}
+      - - {x: 121, y: -17}
+        - {x: 119, y: -19}
+        - {x: 119, y: -34}
+        - {x: 128, y: -34}
+        - {x: 128, y: -17}
+      - - {x: -124, y: -12}
+        - {x: -128, y: -16}
+        - {x: -127, y: -24}
+        - {x: -124, y: -28}
+        - {x: -118, y: -28}
+        - {x: -115, y: -25}
+        - {x: -116, y: -18}
+        - {x: -120, y: -12}
+    - name: BIRD1_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: -106}
+        - {x: 113, y: -72}
+        - {x: 113, y: 104}
+        - {x: 51, y: 117}
+        - {x: -27, y: 117}
+        - {x: -113, y: 71}
+        - {x: -113, y: -117}
+        - {x: -2, y: -117}
+        - {x: 0, y: -106}
+        - {x: -6, y: -103}
+        - {x: 26, y: -115}
+    - name: BIRD1_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: 70}
+        - {x: 8, y: 89}
+        - {x: -17, y: 89}
+        - {x: -76, y: -49}
+        - {x: -76, y: -83}
+        - {x: -49, y: -113}
+        - {x: 83, y: -113}
+        - {x: 116, y: -86}
+        - {x: 116, y: -21}
+        - {x: 110, y: -6}
+    - name: BIRD1_Sprite_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 37}
+        - {x: 47, y: 37}
+        - {x: -1, y: -30}
+        - {x: -1, y: -104}
+        - {x: 3, y: -114}
+        - {x: 124, y: -114}
+        - {x: 161, y: -96}
+        - {x: 161, y: -61}
+        - {x: 153, y: -41}
+    - name: BIRD1_Sprite_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: -42}
+        - {x: 95, y: -37}
+        - {x: 95, y: -24}
+        - {x: -27, y: 22}
+        - {x: -192, y: 22}
+        - {x: -192, y: -14}
+        - {x: -67, y: -118}
+        - {x: 163, y: -118}
+        - {x: 163, y: -69}
+        - {x: 151, y: -56}
+        - {x: 110, y: -53}
+        - {x: 84, y: -40}
+      - - {x: 148, y: -73}
+        - {x: 148, y: -88}
+        - {x: 151, y: -98}
+        - {x: 177, y: -98}
+        - {x: 179, y: -94}
+        - {x: 179, y: -79}
+        - {x: 167, y: -73}
+    - name: BIRD1_Sprite_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -158, y: 128}
+        - {x: -214, y: 72}
+        - {x: -214, y: -51}
+        - {x: -83, y: -51}
+        - {x: -45, y: -42}
+        - {x: -45, y: 78}
+        - {x: -75, y: 128}
+      - - {x: -72, y: 26}
+        - {x: -73, y: 23}
+        - {x: -73, y: -3}
+        - {x: -69, y: -4}
+        - {x: -54, y: -4}
+        - {x: -54, y: 17}
+        - {x: -61, y: 26}
+    - name: BIRD1_Sprite_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 52}
+        - {x: -42, y: 123}
+        - {x: -106, y: 123}
+        - {x: -228, y: 25}
+        - {x: -228, y: -44}
+        - {x: -188, y: -114}
+        - {x: -106, y: -114}
+        - {x: -39, y: -87}
+        - {x: 0, y: -51}
+        - {x: 0, y: 4}
+      - - {x: -243, y: 20}
+        - {x: -250, y: 20}
+        - {x: -253, y: 15}
+        - {x: -253, y: 5}
+        - {x: -251, y: 1}
+        - {x: -242, y: 1}
+        - {x: -237, y: 6}
+        - {x: -237, y: 18}
+      - - {x: -40, y: 109}
+        - {x: -40, y: 90}
+        - {x: -38, y: 85}
+        - {x: -20, y: 85}
+        - {x: -19, y: 88}
+        - {x: -19, y: 102}
+        - {x: -25, y: 109}
+    - name: BIRD1_Sprite_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112, y: 59}
+        - {x: -204, y: -55}
+        - {x: -204, y: -111}
+        - {x: -198, y: -112}
+        - {x: 53, y: -112}
+        - {x: 53, y: -21}
+        - {x: -19, y: 59}
+      - - {x: -225, y: -40}
+        - {x: -228, y: -42}
+        - {x: -228, y: -60}
+        - {x: -224, y: -68}
+        - {x: -208, y: -68}
+        - {x: -207, y: -67}
+        - {x: -207, y: -54}
+        - {x: -218, y: -40}
+      - - {x: 43, y: -25}
+        - {x: 33, y: -29}
+        - {x: 31, y: -34}
+        - {x: 31, y: -49}
+        - {x: 32, y: -52}
+        - {x: 41, y: -52}
+        - {x: 48, y: -47}
+        - {x: 54, y: -41}
+        - {x: 54, y: -25}
+    - name: BIRD1_Sprite_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: -104}
+        - {x: -48, y: -113}
+        - {x: -41, y: -113}
+        - {x: 31, y: -85}
+        - {x: 73, y: -6}
+        - {x: 73, y: 69}
+        - {x: -99, y: 69}
+        - {x: -176, y: 49}
+        - {x: -176, y: -94}
+        - {x: -173, y: -114}
+        - {x: -124, y: -126}
+        - {x: -87, y: -126}
+        - {x: -41, y: -95}
+        - {x: -44, y: -87}
+        - {x: -35, y: -92}
+      - - {x: -253, y: -5}
+        - {x: -256, y: -6}
+        - {x: -256, y: -18}
+        - {x: -250, y: -25}
+        - {x: -242, y: -25}
+        - {x: -241, y: -22}
+        - {x: -241, y: -11}
+        - {x: -245, y: -5}
+      - - {x: 9, y: 124}
+        - {x: 6, y: 120}
+        - {x: 6, y: 100}
+        - {x: 10, y: 98}
+        - {x: 25, y: 98}
+        - {x: 26, y: 103}
+        - {x: 26, y: 117}
+        - {x: 20, y: 124}
+    - name: BIRD1_Sprite_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 117, y: -88}
+        - {x: 117, y: 8}
+        - {x: 95, y: 118}
+        - {x: 59, y: 128}
+        - {x: -35, y: 128}
+        - {x: -114, y: 30}
+        - {x: -114, y: -102}
+        - {x: -76, y: -118}
+        - {x: -65, y: -100}
+        - {x: -65, y: -94}
+        - {x: -11, y: -123}
+        - {x: 45, y: -123}
+        - {x: 50, y: -120}
+        - {x: 50, y: -111}
+        - {x: 93, y: -100}
+    - name: BIRD1_Sprite_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 2547
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BIRD1_Sprite_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 106}
+        - {x: -12, y: 106}
+        - {x: -74, y: 79}
+        - {x: -107, y: 14}
+        - {x: -107, y: -76}
+        - {x: -14, y: -125}
+        - {x: 50, y: -125}
+        - {x: 53, y: -117}
+        - {x: 88, y: -97}
+        - {x: 88, y: 53}
+      - - {x: -115, y: 120}
+        - {x: -121, y: 102}
+        - {x: -121, y: 86}
+        - {x: -109, y: 68}
+        - {x: -95, y: 68}
+        - {x: -67, y: 83}
+        - {x: -67, y: 120}
+    - name: BIRD1_Sprite_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 113}
+        - {x: -43, y: 79}
+        - {x: -48, y: 27}
+        - {x: -95, y: 13}
+        - {x: -106, y: 9}
+        - {x: -106, y: -79}
+        - {x: -37, y: -121}
+        - {x: 100, y: -121}
+        - {x: 102, y: -116}
+        - {x: 102, y: 76}
+        - {x: 15, y: 113}
+      - - {x: -115, y: 120}
+        - {x: -121, y: 102}
+        - {x: -121, y: 86}
+        - {x: -109, y: 68}
+        - {x: -95, y: 68}
+        - {x: -67, y: 83}
+        - {x: -67, y: 120}
+      - - {x: 52, y: 91}
+        - {x: 55, y: 92}
+        - {x: 55, y: 95}
+        - {x: 52, y: 96}
+        - {x: 50, y: 94}
+    - name: BIRD1_Sprite_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 106}
+        - {x: -12, y: 106}
+        - {x: -74, y: 79}
+        - {x: -107, y: 14}
+        - {x: -107, y: -76}
+        - {x: -14, y: -125}
+        - {x: 50, y: -125}
+        - {x: 53, y: -117}
+        - {x: 88, y: -97}
+        - {x: 88, y: 53}
+      - - {x: -115, y: 120}
+        - {x: -121, y: 102}
+        - {x: -121, y: 86}
+        - {x: -109, y: 68}
+        - {x: -95, y: 68}
+        - {x: -67, y: 83}
+        - {x: -67, y: 120}
+    - name: BIRD1_Sprite_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 105}
+        - {x: 21, y: 103}
+        - {x: -75, y: 59}
+        - {x: -113, y: 28}
+        - {x: -113, y: -67}
+        - {x: -108, y: -95}
+        - {x: -93, y: -90}
+        - {x: -38, y: -124}
+        - {x: 99, y: -124}
+        - {x: 99, y: -3}
+        - {x: 61, y: 105}
+      - - {x: 48, y: 128}
+        - {x: 48, y: 124}
+        - {x: 51, y: 120}
+        - {x: 53, y: 120}
+        - {x: 55, y: 121}
+        - {x: 55, y: 125}
+        - {x: 53, y: 128}
+    - name: BIRD1_Sprite_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: 117}
+        - {x: -33, y: 117}
+        - {x: -10, y: 89}
+        - {x: -107, y: 0}
+        - {x: -113, y: -12}
+        - {x: -113, y: -63}
+        - {x: -83, y: -117}
+        - {x: 43, y: -117}
+        - {x: 74, y: -106}
+        - {x: 113, y: -45}
+        - {x: 113, y: 26}
+    - name: BIRD1_Sprite_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -105}
+        - {x: 16, y: -95}
+        - {x: 27, y: -116}
+        - {x: 78, y: -112}
+        - {x: 101, y: -75}
+        - {x: 101, y: -27}
+        - {x: 34, y: 89}
+        - {x: -18, y: 89}
+        - {x: -102, y: -38}
+        - {x: -102, y: -87}
+        - {x: -97, y: -96}
+        - {x: -58, y: -117}
+        - {x: -1, y: -117}
+        - {x: 4, y: -113}
+        - {x: 4, y: -107}
+        - {x: 2, y: -105}
+    - name: BIRD1_Sprite_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1555
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BIRD1_Sprite_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 128}
+        - {x: -54, y: 107}
+        - {x: -54, y: -14}
+        - {x: -45, y: -31}
+        - {x: 59, y: -31}
+        - {x: 67, y: 22}
+        - {x: 67, y: 110}
+        - {x: 44, y: 128}
+    - name: BIRD1_Sprite_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 128}
+        - {x: -78, y: 101}
+        - {x: -78, y: -19}
+        - {x: -71, y: -36}
+        - {x: 35, y: -36}
+        - {x: 91, y: 9}
+        - {x: 91, y: 94}
+        - {x: 46, y: 128}
+      - - {x: -97, y: 54}
+        - {x: -102, y: 51}
+        - {x: -110, y: 38}
+        - {x: -110, y: 26}
+        - {x: -108, y: 24}
+        - {x: -94, y: 24}
+        - {x: -87, y: 35}
+        - {x: -87, y: 53}
+        - {x: -90, y: 54}
+      - - {x: 90, y: 64}
+        - {x: 90, y: 56}
+        - {x: 97, y: 40}
+        - {x: 112, y: 40}
+        - {x: 115, y: 42}
+        - {x: 115, y: 61}
+        - {x: 111, y: 64}
+    - name: BIRD1_Sprite_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: -46}
+        - {x: 26, y: -45}
+        - {x: 29, y: -46}
+        - {x: 31, y: -50}
+        - {x: 30, y: -64}
+        - {x: 37, y: -66}
+        - {x: 94, y: -66}
+        - {x: 106, y: -23}
+        - {x: 106, y: 78}
+        - {x: 17, y: 122}
+        - {x: -61, y: 122}
+        - {x: -102, y: 32}
+        - {x: -102, y: -61}
+        - {x: -59, y: -66}
+        - {x: 13, y: -66}
+        - {x: 28, y: -56}
+        - {x: 30, y: -54}
+        - {x: 30, y: -48}
+      - - {x: -123, y: 36}
+        - {x: -127, y: 33}
+        - {x: -127, y: 15}
+        - {x: -114, y: 15}
+        - {x: -111, y: 16}
+        - {x: -111, y: 34}
+        - {x: -114, y: 36}
+      - - {x: 113, y: 90}
+        - {x: 110, y: 88}
+        - {x: 110, y: 76}
+        - {x: 117, y: 67}
+        - {x: 128, y: 67}
+        - {x: 128, y: 85}
+        - {x: 124, y: 90}
+    - name: BIRD1_Sprite_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 45}
+        - {x: -128, y: -12}
+        - {x: -128, y: -109}
+        - {x: -127, y: -109}
+        - {x: -79, y: -112}
+        - {x: 55, y: -112}
+        - {x: 103, y: -111}
+        - {x: 125, y: -100}
+        - {x: 125, y: -80}
+        - {x: 48, y: 45}
+    - name: BIRD1_Sprite_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: -106}
+        - {x: 113, y: -72}
+        - {x: 113, y: 104}
+        - {x: 51, y: 117}
+        - {x: -27, y: 117}
+        - {x: -113, y: 71}
+        - {x: -113, y: -117}
+        - {x: -2, y: -117}
+        - {x: 0, y: -106}
+        - {x: -6, y: -103}
+        - {x: 26, y: -115}
+    - name: BIRD1_Sprite_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 82}
+        - {x: -52, y: 74}
+        - {x: -135, y: -16}
+        - {x: -135, y: -76}
+        - {x: -112, y: -117}
+        - {x: 41, y: -117}
+        - {x: 55, y: -92}
+        - {x: 55, y: 8}
+        - {x: -9, y: 82}
+    - name: BIRD1_Sprite_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -78, y: 15}
+        - {x: -176, y: -57}
+        - {x: -176, y: -116}
+        - {x: -175, y: -121}
+        - {x: -9, y: -121}
+        - {x: -9, y: -20}
+        - {x: -46, y: 15}
+    - name: BIRD1_Sprite_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71, y: -122}
+        - {x: -22, y: -122}
+        - {x: 2, y: -116}
+        - {x: 4, y: -114}
+        - {x: 4, y: -112}
+        - {x: -1, y: -102}
+        - {x: 4, y: -108}
+        - {x: 4, y: -112}
+        - {x: 6, y: -116}
+        - {x: 8, y: -118}
+        - {x: 69, y: -113}
+        - {x: 76, y: -108}
+        - {x: 75, y: -98}
+        - {x: 167, y: -4}
+        - {x: 167, y: 15}
+        - {x: 12, y: 15}
+        - {x: -99, y: -56}
+        - {x: -140, y: -111}
+        - {x: -140, y: -122}
+        - {x: -106, y: -122}
+        - {x: -79, y: -119}
+        - {x: -62, y: -111}
+        - {x: -67, y: -113}
+    - name: BIRD1_Sprite_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 108, y: 128}
+        - {x: 74, y: 84}
+        - {x: 74, y: -13}
+        - {x: 108, y: -37}
+        - {x: 189, y: -37}
+        - {x: 189, y: 115}
+        - {x: 150, y: 128}
+      - - {x: 48, y: 93}
+        - {x: 46, y: 90}
+        - {x: 46, y: 79}
+        - {x: 50, y: 68}
+        - {x: 68, y: 68}
+        - {x: 69, y: 72}
+        - {x: 69, y: 88}
+        - {x: 62, y: 93}
+    - name: BIRD1_Sprite_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 119}
+        - {x: -43, y: 25}
+        - {x: -43, y: -87}
+        - {x: -35, y: -120}
+        - {x: 50, y: -120}
+        - {x: 50, y: 56}
+        - {x: 17, y: 119}
+    - name: BIRD1_Sprite_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 151, y: 105}
+        - {x: 75, y: 105}
+        - {x: 10, y: 66}
+        - {x: 10, y: -34}
+        - {x: 16, y: -53}
+        - {x: 52, y: -55}
+        - {x: 152, y: -55}
+        - {x: 204, y: -18}
+        - {x: 205, y: -16}
+        - {x: 205, y: 47}
+      - - {x: 14, y: 127}
+        - {x: 3, y: 127}
+        - {x: 1, y: 126}
+        - {x: 1, y: 111}
+        - {x: 6, y: 104}
+        - {x: 15, y: 104}
+        - {x: 19, y: 109}
+        - {x: 19, y: 122}
+    - name: BIRD1_Sprite_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 58}
+        - {x: 57, y: 58}
+        - {x: 2, y: -39}
+        - {x: -2, y: -47}
+        - {x: -2, y: -100}
+        - {x: 183, y: -100}
+        - {x: 204, y: -91}
+        - {x: 204, y: -43}
+        - {x: 191, y: -5}
+    - name: BIRD1_Sprite_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 178, y: -100}
+        - {x: 174, y: -101}
+        - {x: 174, y: -113}
+        - {x: 185, y: -119}
+        - {x: 198, y: -119}
+        - {x: 199, y: -117}
+        - {x: 199, y: -103}
+        - {x: 195, y: -100}
+      - - {x: 85, y: -101}
+        - {x: 103, y: -101}
+        - {x: 145, y: -98}
+        - {x: 146, y: -96}
+        - {x: 147, y: -91}
+        - {x: 139, y: -86}
+        - {x: 141, y: -87}
+        - {x: 148, y: -85}
+        - {x: 148, y: -6}
+        - {x: 39, y: 56}
+        - {x: -64, y: 56}
+        - {x: -74, y: 31}
+        - {x: -74, y: -16}
+        - {x: -37, y: -63}
+        - {x: 26, y: -101}
+        - {x: 81, y: -101}
+        - {x: 81, y: -95}
+        - {x: 73, y: -88}
+        - {x: 80, y: -88}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
