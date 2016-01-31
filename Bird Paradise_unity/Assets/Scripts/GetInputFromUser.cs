@@ -107,7 +107,7 @@ public class GetInputFromUser : MonoBehaviour {
 
             else
             {
-                Debug.Log("P1 sucks");
+				Debug.Log("P1 sucks, the correct key was " + temp);
 				p1Score = -1f;
 				progressBar.makingProgressP1(p1Score);
 

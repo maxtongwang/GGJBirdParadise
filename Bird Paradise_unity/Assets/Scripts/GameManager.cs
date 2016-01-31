@@ -6,12 +6,12 @@ public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance;
 
-	public byte lifes = 0;
-	public int score = 0;
-
+	GetInputFromUser input;
 
 	void Awake()
 	{
+		input = GetComponent<GetInputFromUser> ();
+
 		if (Instance == null)
 		{
 			DontDestroyOnLoad(gameObject);
@@ -46,15 +46,18 @@ public class GameManager : MonoBehaviour
 		char[] p1Sequence = new char[1];
 		char[] p2Sequence = new char[1];
 		SequenceGenerator.NewRound(ref p1Sequence, ref p2Sequence);
-//		string p1Test = "";
-//		string p2Test = "";
-//
-//		for(int i = 0; i < p1Sequence.Length; i += 1)
-//		{
-//			p1Test = p1Test + p1Sequence[i].ToString()+", ";
-//			p2Test = p2Test + p2Sequence[i].ToString()+", ";
-//		}
-//		Debug.Log(p1Test);
-//		Debug.Log(p2Test);
+
+		input.RecieveArrays (p1Sequence, p2Sequence);
+
+		string p1Test = "";
+		string p2Test = "";
+
+		for(int i = 0; i < p1Sequence.Length; i += 1)
+		{
+			p1Test = p1Test + p1Sequence[i].ToString()+", ";
+			p2Test = p2Test + p2Sequence[i].ToString()+", ";
+		}
+		Debug.Log(p1Test);
+		Debug.Log(p2Test);
 	}
 }

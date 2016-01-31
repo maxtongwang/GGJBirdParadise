@@ -3,15 +3,15 @@ using System.Collections;
 
 public class SequenceGenerator : MonoBehaviour
 {
-	private static char[][] p1Keys = new char[][] {	new char[] {'q','a','z'},
-													new char[] {'w','s','x'},
-													new char[] {'e','d','c'},
-													new char[] {'r','f','v'}};
+	private static char[][] p1Keys = new char[][] {	new char[] {'Q','A','Z'},
+													new char[] {'W','S','X'},
+													new char[] {'E','D','C'},
+													new char[] {'R','F','V'}};
 	
-	private static char[][] p2Keys = new char[][] { new char[] {'o','l','p'},
-													new char[] {'i','k','m'},
-													new char[] {'u','j','n'},
-													new char[] {'y','h','b'}};
+	private static char[][] p2Keys = new char[][] { new char[] {'O','L','P'},
+													new char[] {'I','K','M'},
+													new char[] {'U','J','N'},
+													new char[] {'Y','H','B'}};
 	
 	public static void NewRound(ref char[] p1Letters, ref char[] p2Letters)
 	{
