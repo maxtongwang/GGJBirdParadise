@@ -10,21 +10,16 @@ public class AnimatorController : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 
-//	public void AnimatorStateUpdateP1(int state)
-//	{
-//		anim.SetInteger ("p1AnimatorState", state);
-//	}
-
 	public void wrongInput(int player)
 	{
 		// player 1
 		if (player == 0) {
-			anim.SetInteger ("p1AnimatorState", 1);
+			anim.SetTrigger("p1WrongTrigger");
 		}
 
 		// player 2
 		if (player == 1) {
-			anim.SetInteger ("p2AnimatorState", 1);
+			anim.SetTrigger("p2WrongTrigger");
 		}
 	}
 
@@ -32,30 +27,43 @@ public class AnimatorController : MonoBehaviour {
 	{
 		// player 1
 		if (player == 0) {
-			anim.SetInteger ("p1AnimatorState", 2);
+			anim.SetTrigger("p1RightTrigger");
 		}
 
 		// player 2
 		if (player == 1) {
-			anim.SetInteger ("p2AnimatorState", 2);
+			anim.SetTrigger("p2RightTrigger");
 		}
 	}
 
-	public void sequenceEnd()
+	public void sequenceEnd(int player)
 	{
 		// random int for each player
 		// it decides player shimmys in or out
+
 		// player 1
-		anim.SetInteger ("p1AnimatorState", (Random.Range(0,2)+2));
-		
+		if (player == 0) {
+			
+			if ((Random.Range (0, 2) == 0)) {
+				anim.SetTrigger ("p1ShimmyOutTrigger");
+			}
+
+			if ((Random.Range (0, 2) == 1)) {
+				anim.SetTrigger ("p1ShimmyInTrigger");
+			}
+		}
 
 		// player 2
-		anim.SetInteger ("p2AnimatorState", (Random.Range(0,2)+2));
+		if (player == 1) {
+
+			if ((Random.Range (0, 2) == 0)) {
+				anim.SetTrigger ("p2ShimmyOutTrigger");
+			}
+
+			if ((Random.Range (0, 2) == 1)) {
+				anim.SetTrigger ("p2ShimmyInTrigger");
+			}
+		}
 		
 	}
-
-//	public void AnimatorStateUpdateP2(int state)
-//	{
-//		anim.SetInteger ("p2AnimatorState", state);
-//	}
 }
